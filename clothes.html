@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONA GARMENTS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img class="logomap" src="./image/logo2.png" alt="logo2">
+            <h1 class="main-title">SONA GARMENTS</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#women">WOMEN</a></li>
+            <li><a href="#kids">KIDS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <h3>Traditional Dress</h3>
+                <img src="./image/traditional.jpg" alt="Traditional Dress" class="product-img Traditional">
+                <p>Price: ₹1850</p>
+                <p>Discount: 20%</p>
+                <button class="add-cart btn btn-success" onclick="addToCart('Traditional Dress', 49.99)">
+                    <i class="bi bi-whatsapp"></i> Order Now
+                </button>
+            </div>
+            <div class="product">
+                <h3>Crop-Top</h3>
+                <img src="./image/Crop-top.JPG" alt="Crop Top" class="product-img Crop-Top">
+                <p>Price: ₹450</p>
+                <p>Discount: 15%</p>
+                <button class="add-cart btn btn-success" onclick="addToCart('Crop-Top', 29.99)">
+                    <i class="bi bi-whatsapp"></i> Order Now
+                </button>
+            </div>
+            <div class="product">
+                <h3>Tee-Shirts</h3>
+                <img src="./image/tee-shirt.JPG" alt="Tee-Shirts" class="product-img Tee-Shirts">
+                <p>Price: ₹499</p>
+                <p>Discount: 20%</p>
+                <button class="add-cart btn btn-success" onclick="addToCart('Tee-Shirts', 49.99)">
+                    <i class="bi bi-whatsapp"></i> Order Now
+                </button>
+            </div>
+            <div class="product">
+                <h3>Short-Top</h3>
+                <img src="./image/Crop-top2.JPG" alt="Short-Top" class="product-img Short-Top">
+                <p>Price: ₹450</p>
+                <p>Discount: 20%</p>
+                <button class="add-cart btn btn-success" onclick="addToCart('Short-Top', 49.99)">
+                    <i class="bi bi-whatsapp"></i> Order Now
+                </button>
+            </div>
+            <div class="product">
+                <h3>Embroider-Shirt</h3>
+                <img src="./image/Embroider.JPG" alt="Embroider-Shirt" class="product-img Embroider-Shirt">
+                <p>Price: ₹499</p>
+                <p>Discount: 20%</p>
+                <button class="add-cart btn btn-success" onclick="addToCart('Embroider-Shirt', 49.99)">
+                    <i class="bi bi-whatsapp"></i> Order Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <p>&copy; 2024 SONA GARMENTS. All rights reserved.</p>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/sona__garments/profilecard/?igsh=eXJwMnlib2x5eng5" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+            <p>For any queries, contact us at:</p>
+            <ul>
+                <li><a href="tel:+919894794945">+91 9894794945</a></li>
+                <li><a href="tel:+919994746969">+91 9994746969</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
