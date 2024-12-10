@@ -41,7 +41,7 @@
                 <img src="./image/traditional.jpg" alt="Traditional Dress" class="product-img Traditional">
                 <p>Price: ₹1850</p>
                 <p>Discount: 20%</p>
-                <button class="add-cart btn btn-success" onclick="addToCart('Traditional Dress', 49.99)">
+                <button class="add-cart btn btn-success" onclick="orderNow('Traditional Dress')">
                     <i class="bi bi-whatsapp"></i> Order Now
                 </button>
             </div>
@@ -50,7 +50,7 @@
                 <img src="./image/Crop-top.JPG" alt="Crop Top" class="product-img Crop-Top">
                 <p>Price: ₹450</p>
                 <p>Discount: 15%</p>
-                <button class="add-cart btn btn-success" onclick="addToCart('Crop-Top', 29.99)">
+                <button class="add-cart btn btn-success" onclick="orderNow('Crop-Top')">
                     <i class="bi bi-whatsapp"></i> Order Now
                 </button>
             </div>
@@ -59,7 +59,7 @@
                 <img src="./image/tee-shirt.JPG" alt="Tee-Shirts" class="product-img Tee-Shirts">
                 <p>Price: ₹499</p>
                 <p>Discount: 20%</p>
-                <button class="add-cart btn btn-success" onclick="addToCart('Tee-Shirts', 49.99)">
+                <button class="add-cart btn btn-success" onclick="orderNow('Tee-Shirts')">
                     <i class="bi bi-whatsapp"></i> Order Now
                 </button>
             </div>
@@ -68,7 +68,7 @@
                 <img src="./image/Crop-top2.JPG" alt="Short-Top" class="product-img Short-Top">
                 <p>Price: ₹450</p>
                 <p>Discount: 20%</p>
-                <button class="add-cart btn btn-success" onclick="addToCart('Short-Top', 49.99)">
+                <button class="add-cart btn btn-success" onclick="orderNow('Short-Top')">
                     <i class="bi bi-whatsapp"></i> Order Now
                 </button>
             </div>
@@ -77,7 +77,7 @@
                 <img src="./image/Embroider.JPG" alt="Embroider-Shirt" class="product-img Embroider-Shirt">
                 <p>Price: ₹499</p>
                 <p>Discount: 20%</p>
-                <button class="add-cart btn btn-success" onclick="addToCart('Embroider-Shirt', 49.99)">
+                <button class="add-cart btn btn-success" onclick="orderNow('Embroider-Shirt')">
                     <i class="bi bi-whatsapp"></i> Order Now
                 </button>
             </div>
@@ -99,6 +99,14 @@
             </ul>
         </div>
     </footer>
-    
+
+    <script>
+        function orderNow(productName) {
+            const message = `I wish to order this dress ${productName}`;
+            const encodedMessage = encodeURIComponent(message);
+            const url = `https://wa.me/9994746969?text=${encodedMessage}`;
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 </html>
