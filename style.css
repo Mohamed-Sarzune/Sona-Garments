@@ -120,9 +120,9 @@ header {
     background-color: #ff0099;
 }
 
-/* General Navbar Styling */
+/* Navbar Styling */
 nav {
-    background-color: #f8b6d8; /* A mild pink color suitable for all devices */
+    background-color: #f8b6d8;
     padding: 10px 0;
 }
 
@@ -131,18 +131,18 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center align the navigation items */
-    gap: 20px; /* Space between items */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
     display: inline-block;
-    animation: slideIn 1s forwards; /* Apply the sliding animation */
+    animation: slideIn 1s forwards;
 }
 
 nav a {
-    color: #333; /* Darker color for contrast */
+    color: #333;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -150,19 +150,19 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff9ecb; /* A slightly darker pink for hover effect */
-    color: #fff; /* Change text color for better contrast on hover */
+    background-color: #ff9ecb;
+    color: #fff;
 }
 
 /* Keyframes for Sliding Animation */
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(100%); /* Start from the right */
+        transform: translateX(100%);
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Move to the center */
+        transform: translateX(0);
     }
 }
 
@@ -187,81 +187,84 @@ nav a:hover {
     }
 
     .product {
-        width: 90%; /* Make each product take up more space on smaller screens */
+        width: 90%;
     }
 
     nav ul {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        gap: 15px; /* Space between items */
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     nav ul li {
-        display: block; /* Stack items vertically */
-        text-align: center; /* Center text */
+        display: block;
+        text-align: center;
     }
 
     nav a {
-        padding: 10px 20px; /* Adjust padding for touch targets */
+        padding: 10px 20px;
     }
 }
 
-@media (min-width: 769px) {
-    nav ul {
-        flex-direction: row; /* Arrange items horizontally */
-        justify-content: center; /* Center items */
-        gap: 20px; /* Space between items */
-    }
-}
 /* Footer Styling */
 footer {
-    background-color: #f2c6e1; /* A mild pink color */
+    background-color: #f2c6e1;
     color: #333;
     padding: 20px;
     text-align: center;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .footer-content p {
     margin: 10px 0;
 }
 
-/* Style for contact numbers */
+/* Contact Links */
 .footer-content ul li a {
-    color: #333; /* Dark color for contrast */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition */
-}
-
-.footer-content ul li a:hover {
-    color: #e70992; /* Highlight color for hover effect */
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    color: #333; /* Color of social icons */
-    font-size: 1.5rem;
-    margin: 0 10px;
+    color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-    color: #e70992; /* Highlight color on hover */
+.footer-content ul li a:hover {
+    color: #e70992;
 }
 
-@media (max-width: 768px) {
-    .social-icons a {
-        font-size: 1.2rem; /* Adjust size for smaller screens */
-    }
+/* Center Align Products Heading */
+#products h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
-html {
-    scroll-behavior: smooth;
+
+/* Box container styling for images */
+.image-column {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Show container when details are expanded */
+.image-toggle[open] .image-column {
+    display: flex;
+}
+
+/* Styling for images inside the box */
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-column img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
